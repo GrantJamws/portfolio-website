@@ -51,20 +51,20 @@
     z-index: -1;
 
     &.shape-1 {
-      right: -10vw;
-      top: -5vw;
+      right: -125px;
+      top: -60px;
     }
 
     &.shape-2 {
-      right: 10vw;
-      top: 15vw;
+      right: 125px;
+      top: 190px;
       background-color: $dark-grey;
       z-index: -2;
     }
 
     &.shape-3 {
-      right: -15vw;
-      top: 30vw;
+      right: -190px;
+      top: 380px;
       z-index: -3;
     }
   }
