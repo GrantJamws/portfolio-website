@@ -9,9 +9,8 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = ({ className = '' }) => {
 
-  const handleLinkClick = (elementId: string) => {
-    const section = document.getElementById(elementId);
-    section?.scrollIntoView({behavior: "smooth"});
+  const handleLinkClick = (link: string) => {
+    window.open(link, '_blank');
   };
 
   return (
@@ -22,13 +21,12 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
         className="social-links">
         <img
           alt='Linkedin Logo'
-          src={linkedin} />
-        <img
-          alt='Instagram Logo'
-          src={instagram} />
+          src={linkedin}
+          onClick={() => handleLinkClick('https://www.linkedin.com/in/grant-worsley-57b653a7')}  />
         <img
           alt='GitHub Logo'
-          src={github} />
+          src={github}
+          onClick={() => handleLinkClick('https://github.com/GrantJamws')} />
       </div>
     </div>
   );

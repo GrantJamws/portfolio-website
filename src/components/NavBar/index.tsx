@@ -16,6 +16,10 @@ const NavBar: React.FC<NavBarProps> = ({ className = '' }) => {
     section?.scrollIntoView({behavior: "smooth"});
   };
 
+  const handleSocialClick = (link: string) => {
+    window.open(link, '_blank');
+  };
+
   return (
     <div
       className={`navbar ${className}`}>
@@ -44,13 +48,12 @@ const NavBar: React.FC<NavBarProps> = ({ className = '' }) => {
         className='social-links'>
         <img
           alt='Linkedin Logo'
-          src={linkedin} />
-        <img
-          alt='Instagram Logo'
-          src={instagram} />
+          src={linkedin}
+          onClick={() => handleSocialClick('https://www.linkedin.com/in/grant-worsley-57b653a7')}  />
         <img
           alt='GitHub Logo'
-          src={github} />
+          src={github}
+          onClick={() => handleSocialClick('https://github.com/GrantJamws')} />
         <Button>CV</Button>
       </div>
     </div>

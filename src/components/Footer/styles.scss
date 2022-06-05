@@ -12,6 +12,10 @@
   .social-links {
     display: flex;
     gap: 20px;
+
+    img {
+      cursor: pointer;
+    }
   }
 
   .text {
