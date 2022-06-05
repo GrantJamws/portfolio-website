@@ -5,6 +5,10 @@
   min-height: 100vh;
   width: 75vw;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   .header {
     color: $dark-text;
@@ -13,6 +17,7 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
+    width: 100%;
 
     .title {
       font-size: 38px;
@@ -26,6 +31,7 @@
 
   .divider {
     border-color: $dark-text;
+    width: 100%;
 
     &.end {
       margin-top: 40px;
