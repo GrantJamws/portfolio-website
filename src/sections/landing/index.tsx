@@ -1,3 +1,4 @@
+import BackgroundShape from '../../components/BackgroundShape';
 import Button from '../../components/Button';
 import './styles.scss';
 
@@ -17,12 +18,14 @@ const Landing = () => {
         onClick={handleLetChatClick}>
         Let's Chat
       </Button>
-      <span
-        className='background-shape shape-1' />
-      <span
-        className='background-shape shape-2' />
-      <span
-        className='background-shape shape-3' />
+      <BackgroundShape
+        className='background-shape-1'
+        color='light' />
+      <BackgroundShape
+        className='background-shape-2' />
+      <BackgroundShape
+        className='background-shape-3'
+        color='light' />
     </div>
   );
 }

@@ -1,0 +1,27 @@
+@import '/src/colors.scss';
+@import '/src/breakpoints.scss';
+
+.background-shape {
+  height: 380px;
+  width: 550px;
+  border-radius: 250px;
+  background-color: $dark-grey;
+
+  &.background-shape-light {
+    background-color: $light-grey;
+  }
+
+  &.background-shape-dark {
+    background-color: $dark-grey;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    height: 270px;
+    width: 412px;
+  }
+  
+  @media (max-width: $breakpoint-tablet-portrait) {
+    height: 190px;
+    width: 275px;
+  }
+}

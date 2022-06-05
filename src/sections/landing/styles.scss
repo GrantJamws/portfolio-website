@@ -44,25 +44,21 @@
     position: absolute;
     top: 0;
     right: 0;
-    height: 380px;
-    width: 550px;
-    background-color: $light-grey;
-    border-radius: 250px;
     z-index: -1;
 
-    &.shape-1 {
+    &.background-shape-1 {
       right: -125px;
       top: -60px;
     }
 
-    &.shape-2 {
+    &.background-shape-2 {
       right: 125px;
       top: 190px;
       background-color: $dark-grey;
       z-index: -2;
     }
 
-    &.shape-3 {
+    &.background-shape-3 {
       right: -190px;
       top: 380px;
       z-index: -3;
@@ -87,30 +83,45 @@
       font-size: 18px;
       width: 100%;
     }
-  
-    .background-shape {
-      height: 190px;
-      width: 275px;
 
-      &.shape-1 {
+    .background-shape {
+      &.background-shape-1 {
         right: -120px;
         top: -20px;
       }
   
-      &.shape-2 {
-        right: -40px;
-        top: 125px;
-        background-color: $dark-grey;
+      &.background-shape-2 {
+        right: 40px;
+        top: 180px;
         z-index: -2;
       }
   
-      &.shape-3 {
+      &.background-shape-3 {
+        right: -145px;
+        top: 360px;
+        z-index: -3;
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint-tablet-portrait) {
+    .background-shape {
+      &.background-shape-1 {
+        right: -120px;
+        top: -20px;
+      }
+  
+      &.background-shape-2 {
+        right: 20px;
+        top: 125px;
+        z-index: -2;
+      }
+  
+      &.background-shape-3 {
         right: -145px;
         top: 250px;
         z-index: -3;
       }
-
     }
-  
   }
 }
