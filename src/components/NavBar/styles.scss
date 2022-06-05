@@ -1,0 +1,41 @@
+@import '/src/colors.scss';
+@import '/src/breakpoints.scss';
+
+.navbar {
+  height: 55px;
+  width: calc(100vw - 40px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .page-links {
+    display: flex;
+    gap: 15px;
+
+  }
+
+  .social-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+
+    .page-links {
+      button {
+        display: none;
+      }
+    }
+
+    .social-links {
+      img {
+        display: none;
+      }
+    }
+  
+  }
+}

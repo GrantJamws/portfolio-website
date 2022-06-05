@@ -1,0 +1,49 @@
+@import '/src/colors.scss';
+@import '/src/breakpoints.scss';
+
+.experience-section {
+  min-height: 100vh;
+  width: 75vw;
+  margin: auto;
+
+  .header {
+    color: $dark-text;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    .title {
+      font-size: 38px;
+    }
+
+    .divider {
+      flex: 1;
+      height: 0px;
+    }
+  }
+
+  .divider {
+    border-color: $dark-text;
+
+    &.end {
+      margin-top: 40px;
+    }
+  }
+
+
+  @media (max-width: $breakpoint-tablet) {
+    .header {
+      .title {
+        font-size: 30px;
+      }
+    }
+
+    .divider {
+      &.end {
+        margin-bottom: 150px;
+      }
+    }
+  }
+}

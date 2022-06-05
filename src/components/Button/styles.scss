@@ -1,0 +1,20 @@
+@import '/src/colors.scss';
+
+.button {
+  height: 55px;
+  width: fit-content;
+  border-radius: 10px;
+  border: none;
+  padding: 12px 30px;
+  font-size: 20px;
+  font-family: 'Poppins';
+
+  &.button-filled {
+    background-color: $accent-color;
+  }
+
+  &.button-ghost {
+    background-color: transparent;
+    color: $dark-text;
+  }
+}

@@ -1,0 +1,116 @@
+@import '/src/colors.scss';
+@import '/src/breakpoints.scss';
+
+.landing-section {
+  height: 100vh;
+  width: 75vw;
+  margin: auto;
+  padding-top: 110px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+  box-sizing: border-box;
+
+  .greeting {
+    font-family: 'Bad Script';
+    font-style: italic;
+    font-size: 120px;
+    line-height: 120px;
+    color: $accent-color;
+    margin: 0;
+  }
+
+  .name {
+    font-size: 80px;
+    line-height: 80px;
+    color: $accent-color;
+    margin: 0;
+  }
+
+  .introduction {
+    font-size: 38px;
+    color: $dark-text;
+    margin: 0;
+    width: 70%;
+  }
+
+  .landing-button {
+    margin-top: 50px;
+  }
+
+  .background-shape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 380px;
+    width: 550px;
+    background-color: $light-grey;
+    border-radius: 250px;
+    z-index: -1;
+
+    &.shape-1 {
+      right: -10vw;
+      top: -5vw;
+    }
+
+    &.shape-2 {
+      right: 10vw;
+      top: 15vw;
+      background-color: $dark-grey;
+      z-index: -2;
+    }
+
+    &.shape-3 {
+      right: -15vw;
+      top: 30vw;
+      z-index: -3;
+    }
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    gap: 10px;
+
+
+    .greeting {
+      font-size: 80px;
+      line-height: 80px;
+    }
+
+    .name {
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    .introduction {
+      font-size: 18px;
+      width: 100%;
+    }
+  
+    .background-shape {
+      height: 190px;
+      width: 275px;
+
+      &.shape-1 {
+        right: -120px;
+        top: -20px;
+      }
+  
+      &.shape-2 {
+        right: -40px;
+        top: 125px;
+        background-color: $dark-grey;
+        z-index: -2;
+      }
+  
+      &.shape-3 {
+        right: -145px;
+        top: 250px;
+        z-index: -3;
+      }
+
+    }
+  
+  }
+}

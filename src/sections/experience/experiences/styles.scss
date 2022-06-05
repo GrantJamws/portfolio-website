@@ -1,0 +1,31 @@
+@import '/src/colors.scss';
+@import '/src/breakpoints.scss';
+
+.experience-tab-content {
+  text-align: left;
+
+  .title {
+    font-size: 26px;
+    color: $accent-color;
+    margin: 0;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    color: $dark-text;
+    margin: 0;
+  }
+
+  .content {
+    font-size: 18px;
+    color: $light-text;
+    text-align: justify;
+  }
+
+
+  @media (max-width: $breakpoint-tablet) {
+    .title {
+      font-size: 30px;
+    }
+  }
+}

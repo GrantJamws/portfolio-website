@@ -1,0 +1,54 @@
+@import '/src/colors.scss';
+@import '/src/breakpoints.scss';
+
+.contact-section {
+  min-height: 100vh;
+  width: 75vw;
+  margin: auto;
+
+
+  .header {
+    color: $dark-text;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+
+    .title {
+      font-size: 38px;
+    }
+
+    .divider {
+      flex: 1;
+      height: 0px;
+    }
+  }
+
+  .divider {
+    border-color: $dark-text;
+  }
+
+  .contact-paragraph {
+    width: 75%;
+    margin: auto;
+    font-size: 18px;
+    color: $light-text;
+    text-align: justify;
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+
+    .contact-paragraph {
+      width: 100%;
+    }
+
+    .header {
+      .title {
+        font-size: 30px;
+      }
+    }
+  }
+}

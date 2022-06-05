@@ -1,0 +1,38 @@
+@import '/src/colors.scss';
+@import '/src/breakpoints.scss';
+
+.footer {
+  width: calc(100vw - 160px);
+  padding: 10px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $light-grey;
+
+  .social-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  .text {
+    color: $accent-color;
+  }
+
+
+  @media (max-width: $breakpoint-tablet) {
+    width: 75vw;
+    padding: 20px 12.5vw;
+    flex-direction: column;
+    gap: 20px;
+
+
+
+  .social-links {
+    order: 1;
+  }
+
+  .text {
+    order: 2;
+  }
+  }
+}
