@@ -2,6 +2,11 @@ import Button from '../../components/Button';
 import './styles.scss';
 
 const Contact = () => {
+
+  const handleStartChattingClick = () => {
+    window.open("mailto:worsleygrant@hotmail.com");
+  };
+
   return (
     <div
       id='contact'
@@ -17,7 +22,8 @@ const Contact = () => {
           Please reach out if you want to hear more about any of my experience or projects, or have any feedback on anything at all my virtual door is always open to conversation. I hope this page was useful for yourself and look forward to chatting.
         </span>
       </div>
-      <Button>
+      <Button
+        onClick={handleStartChattingClick}>
         Start Chatting?
       </Button>
     </div>

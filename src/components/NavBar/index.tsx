@@ -54,7 +54,6 @@ const NavBar: React.FC<NavBarProps> = ({ className = '' }) => {
           alt='GitHub Logo'
           src={github}
           onClick={() => handleSocialClick('https://github.com/GrantJamws')} />
-        <Button>CV</Button>
       </div>
     </div>
   );
