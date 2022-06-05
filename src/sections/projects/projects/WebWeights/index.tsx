@@ -4,7 +4,8 @@ const WebWeights = () => {
   return (    
     <div className="experience-tab-content">
       <h1 className="title">WebWeights</h1>
-      <p className="content">Working at Capgemini I have been developing the React frontend. Connecting graphQL queries and the user. Whilst also having input in the design and usability of the website, which I am in the process of completing the Google Professional UX Course. Missguided have given me a great opportunity to work in e-commerce with the quick turn around of new features and fixes to the live system. Working in this environment has allowed me to pick up new techniques when considering web design and development as I have worked with colleagues from different parts of the UK and overseas.</p>
+      <p className="content">For the last few years I have used time outside of work to pursue a passion in web development, this started with a small project to collect gym data and grew to a project to test my latest ideas and try new technologies in anger. Over the years it has progressed from an EC2 instance hosted website using HTML/CSS/PHP to a Vue.JS application hosted on an S3 bucket to its current form which is a React app hosted using server less AWS services. This project has helped me rapidly learn new skills and try ideas which I would be unable to try in the workplace. Through this development I have found a great interest in moving this over to an iOS based application, this has come from my understanding of TypeScript and its similarities to swift.</p>
+      <a href="app.webweights.com">app.webweights.com</a>
     </div>
   );
 }
