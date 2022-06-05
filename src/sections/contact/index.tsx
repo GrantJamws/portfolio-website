@@ -1,3 +1,4 @@
+import BackgroundShape from '../../components/BackgroundShape';
 import Button from '../../components/Button';
 import './styles.scss';
 
@@ -26,6 +27,9 @@ const Contact = () => {
         onClick={handleStartChattingClick}>
         Start Chatting?
       </Button>
+
+      <BackgroundShape
+        color="light" />
     </div>
   );
 }

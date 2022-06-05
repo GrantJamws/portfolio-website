@@ -1,6 +1,7 @@
 import './styles.scss';
 import TabGroup from '../../components/TabGroup';
 import WebWeightsProject from './projects/WebWeights';
+import BackgroundShape from '../../components/BackgroundShape';
 
 const Projects = () => {
   const projectTabs = {
@@ -22,6 +23,11 @@ const Projects = () => {
         tabs={projectTabs}/>
 
       <hr className="end divider" />
+      <BackgroundShape
+        className='background-shape-1' />
+      <BackgroundShape
+        className='background-shape-2'
+        color='light' />
     </div>
   );
 }

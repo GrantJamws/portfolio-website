@@ -42,8 +42,6 @@
 
   .background-shape {
     position: absolute;
-    top: 0;
-    right: 0;
     z-index: -1;
 
     &.background-shape-1 {
@@ -54,7 +52,6 @@
     &.background-shape-2 {
       right: 125px;
       top: 190px;
-      background-color: $dark-grey;
       z-index: -2;
     }
 

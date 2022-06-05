@@ -1,3 +1,4 @@
+import BackgroundShape from '../../components/BackgroundShape';
 import TabGroup from '../../components/TabGroup';
 import CapgeminiExperience from './experiences/Capgemini';
 import MissguidedExperience from './experiences/Missguided';
@@ -26,6 +27,12 @@ const Experience = () => {
         tabs={experienceTabs}/>
 
       <hr className="end divider" />
+      <BackgroundShape
+        className='background-shape-1'
+        color='light' />
+      <BackgroundShape
+        className='background-shape-2'
+        color='light' />
     </div>
   );
 }
