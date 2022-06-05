@@ -19,7 +19,7 @@ const Contact = () => {
       <div
         className="contact-paragraph">
         <span>
-          Please reach out if you want to hear more about any of my experience or projects, or have any feedback on anything at all my virtual door is always open to conversation. I hope this page was useful for yourself and look forward to chatting.
+          Please reach out if you want to hear more about any of my experience or projects, or have any feedback on anything at all, my virtual door is always open to conversation. I hope this page was useful for yourself and look forward to chatting.
         </span>
       </div>
       <Button

@@ -1,6 +1,5 @@
 import './styles.scss';
 import linkedin from '../../svg/linkedin.svg';
-import instagram from '../../svg/instagram.svg';
 import github from '../../svg/github.svg';
 
 interface FooterProps {

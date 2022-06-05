@@ -1,7 +1,6 @@
 import Button from '../Button';
 import logo from '../../svg/logo.svg';
 import linkedin from '../../svg/linkedin.svg';
-import instagram from '../../svg/instagram.svg';
 import github from '../../svg/github.svg';
 import './styles.scss';
 
